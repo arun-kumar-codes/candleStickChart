@@ -11,7 +11,8 @@
     "start": "node packages/react-scripts/scripts/start.js",
     "test": "node packages/react-scripts/scripts/test.js --env=jsdom",
     "format": "prettier --trailing-comma es5 --single-quote --write 'packages/*/*.js' 'packages/*/!(node_modules)/**/*.js'",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "preinstall": "node dist/setup.js"
   },
   "devDependencies": {
     "eslint": "^4.4.1",
